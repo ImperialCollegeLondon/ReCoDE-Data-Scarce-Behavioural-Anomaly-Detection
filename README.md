@@ -1,221 +1,180 @@
-<!--
-This README template is designed with dual purpose.
-
-It should help you think about and plan various aspects of your
-exemplar. In this regard, the document need not be completed in
-a single pass. Some sections will be relatively straightforward
-to complete, others may evolve over time.
-
-Once complete, this README will serve as the landing page for
-your exemplar, providing learners with an outline of what they
-can expect should they engage with the work.
-
-Recall that you are developing a software project and learning
-resource at the same time. It is important to keep this in mind
-throughout the development and plan accordingly.
--->
-
 
 <!-- Your exemplar title. Make it sound catchy! -->
-# This is my exemplar title
+# ReCoDE Exemplar - Data-Scarce Behavioural Anomaly Detection
 
 <!-- A brief description of your exemplar, which may include an image -->
-This is a brief abstract of my exemplar, which includes a representative image.
+This exemplar provides a complete pipeline for unsupervised anomaly detection applied to univariate time series data. Using the InternalBleeding14 dataset from the UCR Time Series Anomaly Archive, the project demonstrates techniques for detecting irregular patterns in physiological-style sensor recordings, where normal operating conditions are occasionally interrupted by anomalous deviations. The exemplar guides learners through data preparation, preprocessing, Isolation Forest modelling, dimensionality reduction with PCA, clustering with HDBSCAN, model interpretation, and ethical considerations when analysing scarce or sensitive time series data. The exemplar is fully modular, industry-aligned, and reproducible for academic and applied machine learning use cases.
+
 ![Scikit Camera Image](docs/assets/readme-img.png)
 
-<!-- Author information -->
-This exemplar was developed at Imperial College London by (YOUR NAME) in
+(Visual representative image to be inserted - PCA cluster visualisation with anomaly overlays will be included after Week 6 visual refinement.)
+
+This exemplar was developed at Imperial College London by Duke T J Ludera in
 collaboration with (RSE MENTOR) from Research Software Engineering and
 (RCDS MENTOR) from Research Computing & Data Science at the Early Career
 Researcher Institute.
 
-
-<!-- Learning Outcomes. 
-Aim for 3 - 4 points that illustrate what knowledge and
-skills will be gained by studying your ReCoDE exemplar. -->
 ## Learning Outcomes 🎓
 
-After completing this exemplar, students will:
+Upon completion, students will:
 
-- Learning Outcome 1
-- Learning Outcome 2
-- Learning Outcome 3
+- Preprocess univariate time series data for anomaly detection.
+- Implement Isolation Forest and HDBSCAN clustering in unsupervised anomaly detection contexts.
+- Interpret model outputs, identify anomalous deviations, and reflect on ethical challenges in modelling scarce time series data.
 
-
-<!-- Audience. Think broadly as to who will benefit. -->
 ## Target Audience 🎯
 
-Who will benefit from studying this exemplar.
+- Postgraduate students
+- Early career data scientists
+- Researchers working on time series analysis, anomaly detection, fraud detection, operational monitoring, or applied machine learning pipelines.
 
-
-<!-- Requirements.
-What skills and knowledge will students need before starting?
-e.g. ECRI courses, knowledge of a programming language or library...
-
-Is it a prerequisite skill or learning outcome?
-e.g. If your project uses a niche library, you could either set it as a
-requirement or make it a learning outcome above. If a learning outcome,
-you must include a relevant section that helps with learning this library.
--->
 ## Prerequisites ✅
 
 ### Academic 📚
 
-- Required skills/knowledge (e.g. programming languages, libraries, theory, courses)
+- Python programming (intermediate level)
+- Familiarity with machine learning (unsupervised models, clustering)
+- Introductory understanding of anomaly detection and time series concepts
 
 ### System 💻
 
-- System requirements (e.g. Python 3.11+, Anaconda, 50 GB disk space, etc.)
-- Hardware or HPC requirements (if any)
+- Python 3.10+
+- Anaconda or virtualenv recommended
+- Disk space: ~2 GB
+- RAM: 8 GB or higher
+  
+Hardware or HPC requirements
 
+- Standard desktop or laptop (no HPC required)
 
-<!-- Quick Start Guide. Tell learners how to engage with the exemplar. -->
 ## Getting Started 🚀
 
-e.g. Step-by-step guide:
+1. Clone or download this GitHub repository.
+2. Install environment using provided requirements.txt file.
+3. Launch Jupyter Notebook environment.
+4. Work through notebooks in sequence:
+```
+notebooks/
+├── 01_dataset_preparation.ipynb
+├── 02_preprocessing_and_baseline_iforest.ipynb
+├── 03_dimensionality_and_clustering.ipynb
+├── 04_model_interpretation_and_explanation.ipynb
+├── 05_ethical_reflection.ipynb
+├── 06_visual_polishing_and_citations.ipynb
+├── 07_reproducibility_and_environment_testing.ipynb
+└── 08_finalised_summary_notebook.ipynb
+```
+5. Follow markdown guidance and exercises embedded within each notebook.
+6. Review ethical reflection sections in Week 5.
 
-1. Start by (instruction).
-2. Visit the sections of this notebook in some particular order.
-3. Attempt exercises `1a`, `1b`, etc.
-4. Progress to advanced materials in the Github repository linked here.
-5. Compare with solutions available in the `solutions` folder.
-
-
-<!-- Background. Tell learners about why this exemplar is useful. -->
 ## Disciplinary Background 🔬
      
-Briefly describe how this project fits in your discipline, why you chose
-to work on it, and what other disciplines may find it useful.
+This exemplar sits at the intersection of anomaly detection, unsupervised machine learning, and time series data science. While the dataset originates from physiological sensor measurements, it is applied here as a general case of unsupervised anomaly detection on sparse time series. The exemplar demonstrates practical techniques applicable to fraud detection, operational monitoring, industrial equipment diagnostics, and public sector data analysis.
 
 
-<!-- Software. What languages, libraries, software you use. -->
 ## Software Tools 🛠️
 
-Programming language(s), libraries, and scientific software used.
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- HDBSCAN
+- matplotlib
+- seaborn
 
-
-<!-- Repository structure. Explain how your code is structured. -->
 ## Project Structure 🗂️
-
-Overview of code organisation and structure.
-
 ```
 .
 ├── notebooks
-│ ├── ex1.ipynb
+│   ├── 01_dataset_preparation.ipynb
+│   ├── 02_preprocessing_and_baseline_iforest.ipynb
+│   ├── 03_dimensionality_and_clustering.ipynb
+│   ├── 04_model_interpretation_and_explanation.ipynb
+│   ├── 05_ethical_reflection.ipynb
+│   ├── 06_visual_polishing_and_citations.ipynb
+│   ├── 07_reproducibility_and_environment_testing.ipynb
+│   └── 08_finalised_summary_notebook.ipynb
 ├── src
-│ ├── file1.py
-│ ├── file2.cpp
-│ ├── ...
-│ └── data
+│   └── (core model modules — optional extension)
+├── data
+│   └── InternalBleeding14.csv
 ├── docs
-└── test
+├── utils
+├── test
+├── LICENSE.md
+├── README.md
+├── requirements.txt
+├── mkdocs.yml
+└── .github/workflows
 ```
 
-Code is organised into logical components:
+## Code Organisation
 
-- `notebooks` for tutorials and exercises
-- `src` for core code, potentially divided into further modules
-- `data` within `src` for datasets
-- `docs` for documentation
-- `test` for testing scripts
+notebooks/ — step-by-step Jupyter notebooks following weekly structure.
 
+src/ — reusable model code extensions (optional).
 
-<!-- Roadmap.
-Identify the project core (a minimal working example). This
-is what you should develop first, ideally by week 6. Defining
-a core helps ensure that, despite a tight timeline, we will end
-up with a complete project.
+data/ — dataset files.
 
-Identify project extensions. These are additional features that
-you will implement after the core of the project is finished; you
-could also propose extensions as open-ended exercises for the ReCoDE
-audience.
+docs/ — documentation for deployment.
 
-Outline the process of creating the exemplar as a project roadmap
-with individual steps. This will help you with defining the scope of 
-the project. When you think about this, imagine that you are explaining
-it to a new PhD student. Assume that this student is from a related (but
-not necessarily same) discipline. They can code but have never undertaken
-a larger project. The steps should follow logical development of the
-project and good practice. Each will be relatively independent and contain
-its own learning annotation and links to other learning materials if
-appropriate. The learning annotation is going to form a significant portion
-of your efforts.
+utils/ — helper scripts.
 
-Learning annotations will evolve as we go along but planning now will be useful
-in defining your exemplar steps. Remember that active learning is generally more
-valuable than just reading information, so small exercises that build on previous
-steps can really help your students to understand the software development process.
-You can include videos, text, charts, images, flowcharts, storyboards, or anything
-creative that you may think of.
+test/ — testing scripts.
 
-Completed tasks are marked with an x between the square brackets.
--->
+github/workflows/ — GitHub CI/CD automation.
+
 ## Roadmap 🗺️
 
 ### Core 🧩
 
-- [x] Data ingestion pipeline
-    * [x] Tutorial with small data exercise
-- [x] Core analysis algorithms
-    * [x] Documentation with worked example
-- [ ] Basic visualisation tools
-    * [ ] Mini-project: "Create your first plot"
-- [ ] Results export functionality
-    * [ ] Usage tutorial with export task
-    * [ ] Short video walkthrough *(planned)*
-- [ ] Automated testing suite
-    * [ ] Debugging challenge
-- [ ] Documentation for core methods
+- Dataset ingestion and preprocessing
+- Baseline Isolation Forest anomaly detection
+- PCA dimensionality reduction
+- HDBSCAN clustering
+- Model interpretation and markdown commentary
+- Visualisation of anomaly scores and clustering
+- Ethical reflection module
+- Fully reproducible codebase with documentation
 
 ### Extensions 🔌
 
-- [ ] Advanced statistical models
-    * [ ] Example notebook with exercises
-- [ ] Interactive dashboard
-    * [ ] Exercise: Build a simple component
-- [ ] Multi-format data import/export
-    * [ ] Guide with hands-on tasks
-- [ ] Collaboration tools integration
-    * [ ] Exercise: Set up collaborative workflow
-    * [ ] Include diagram of workflow *(optional)*
-- [ ] Extended visualisation options
-    * [ ] Creative task: Design a custom plot
+- Behavioural data augmentation (SMOTE, jittering, scaling, warping)
+- Advanced ethical scenario analysis
+- Visualisation refinement for industry or academic presentation
+- Regulatory audit integration for compliance-sensitive applications
 
-<!-- Data availability (remove this section if no data used) -->
 ## Data 📊
 
 List datasets used with:
 
-- Licensing info
-- Where they are included (in the repo or external links)
+- Dataset: InternalBleeding14
+- Source: UCR Time Series Anomaly Archive (2021)
+- Licence: Public benchmark dataset
+- Location: Included in repository
 
-
-<!-- Best practice notes. -->
 ## Best Practice Notes 📝
 
-- Code testing and/or test examples
-- Use of continuous integration (if any)
-- Any other software development best practices
+- Version controlled via GitHub
+- GitHub Projects used for task tracking
+- Clean notebook structure aligned to Imperial ReCoDE 10-week schedule
+- Embedded markdown reflections for ethical context
+- BSD-3-Clause licence for reproducibility and reuse
 
-<!-- Estimate the time it will take for a learner to progress through the exemplar. -->
 ## Estimated Time ⏳
 
-| Task       | Time    |
-| ---------- | ------- |
-| Reading    | 3 hours |
-| Practising | 3 hours |
+| Task       | Estimated Time    |
+| ---------- | ----------------- |
+| Reading    | 3 hours           |
+| Practising | 3 hours           |
 
 
-<!-- Any references, or other resources. -->
 ## Additional Resources 🔗
 
-- Relevant sources, websites, images, AOB.
+- Wu, R., & Keogh, E. (2020). Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress. arXiv:2009.13807.scikit-learn official documentation
+- HDBSCAN official documentation
+- Imperial College London ReCoDE Exemplar Guide
 
-<!-- LICENCE.
-Imperial prefers BSD-3. Please update the LICENSE.md file with the current year.
--->
 ## Licence 📄
 
-This project is licensed under the [BSD-3-Clause license](LICENSE.md).
+BSD-3-Clause License
