@@ -24,7 +24,7 @@ This is a brief abstract of my exemplar, which includes a representative image.
 ![Scikit Camera Image](docs/assets/readme-img.png)
 
 <!-- Author information -->
-This exemplar was developed at Imperial College London by (YOUR NAME) in
+This exemplar was developed at Imperial College London by Duke T J  Ludera in
 collaboration with (RSE MENTOR) from Research Software Engineering and
 (RCDS MENTOR) from Research Computing & Data Science at the Early Career
 Researcher Institute.
@@ -33,7 +33,7 @@ Researcher Institute.
 <!-- Learning Outcomes. 
 Aim for 3 - 4 points that illustrate what knowledge and
 skills will be gained by studying your ReCoDE exemplar. -->
-## Learning Outcomes 🎓
+## Learning Outcomes 
 
 After completing this exemplar, students will:
 
@@ -43,7 +43,7 @@ After completing this exemplar, students will:
 
 
 <!-- Audience. Think broadly as to who will benefit. -->
-## Target Audience 🎯
+## Target Audience 
 
 Who will benefit from studying this exemplar.
 
@@ -57,20 +57,20 @@ e.g. If your project uses a niche library, you could either set it as a
 requirement or make it a learning outcome above. If a learning outcome,
 you must include a relevant section that helps with learning this library.
 -->
-## Prerequisites ✅
+## Prerequisites 
 
-### Academic 📚
+### Academic 
 
 - Required skills/knowledge (e.g. programming languages, libraries, theory, courses)
 
-### System 💻
+### System 
 
 - System requirements (e.g. Python 3.11+, Anaconda, 50 GB disk space, etc.)
 - Hardware or HPC requirements (if any)
 
 
 <!-- Quick Start Guide. Tell learners how to engage with the exemplar. -->
-## Getting Started 🚀
+## Getting Started 
 
 e.g. Step-by-step guide:
 
@@ -82,20 +82,20 @@ e.g. Step-by-step guide:
 
 
 <!-- Background. Tell learners about why this exemplar is useful. -->
-## Disciplinary Background 🔬
+## Disciplinary Background 
      
 Briefly describe how this project fits in your discipline, why you chose
 to work on it, and what other disciplines may find it useful.
 
 
 <!-- Software. What languages, libraries, software you use. -->
-## Software Tools 🛠️
+## Software Tools 
 
 Programming language(s), libraries, and scientific software used.
 
 
 <!-- Repository structure. Explain how your code is structured. -->
-## Project Structure 🗂️
+## Project Structure 
 
 Overview of code organisation and structure.
 
@@ -152,9 +152,12 @@ creative that you may think of.
 
 Completed tasks are marked with an x between the square brackets.
 -->
-## Roadmap 🗺️
+## Roadmap 
 
-### Core 🧩
+Initial setup and planning began 13 May. GitHub repository created, exemplar timeline entered, and README template populated.
+
+### Core 
+
 
 - [x] Data ingestion pipeline
     * [x] Tutorial with small data exercise
@@ -169,7 +172,7 @@ Completed tasks are marked with an x between the square brackets.
     * [ ] Debugging challenge
 - [ ] Documentation for core methods
 
-### Extensions 🔌
+### Extensions 
 
 - [ ] Advanced statistical models
     * [ ] Example notebook with exercises
@@ -184,7 +187,7 @@ Completed tasks are marked with an x between the square brackets.
     * [ ] Creative task: Design a custom plot
 
 <!-- Data availability (remove this section if no data used) -->
-## Data 📊
+## Data 
 
 List datasets used with:
 
@@ -193,14 +196,14 @@ List datasets used with:
 
 
 <!-- Best practice notes. -->
-## Best Practice Notes 📝
+## Best Practice Notes 
 
 - Code testing and/or test examples
 - Use of continuous integration (if any)
 - Any other software development best practices
 
 <!-- Estimate the time it will take for a learner to progress through the exemplar. -->
-## Estimated Time ⏳
+## Estimated Time 
 
 | Task       | Time    |
 | ---------- | ------- |
@@ -209,13 +212,12 @@ List datasets used with:
 
 
 <!-- Any references, or other resources. -->
-## Additional Resources 🔗
+## Additional Resources 
 
 - Relevant sources, websites, images, AOB.
 
 <!-- LICENCE.
 Imperial prefers BSD-3. Please update the LICENSE.md file with the current year.
 -->
-## Licence 📄
-
+## Licence 
 This project is licensed under the [BSD-3-Clause license](LICENSE.md).
