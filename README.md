@@ -49,7 +49,7 @@ Hardware or HPC requirements
 
 ## Getting Started 🚀
 
-1. Clone or download this GitHub repository.
+1. Clone this GitHub repository.
 2. Install environment using provided requirements.txt file.
 3. Launch Jupyter Notebook environment.
 4. Work through notebooks in sequence:
