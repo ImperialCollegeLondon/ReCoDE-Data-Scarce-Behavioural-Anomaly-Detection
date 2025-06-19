@@ -136,6 +136,9 @@ github/workflows/ — GitHub CI/CD automation.
 - Visualisation of anomaly scores and clustering
 - Ethical reflection module
 - Fully reproducible codebase with documentation
+- 
+**Updates:**  
+- Week 6 (16–23 June): Improved markdown structure and visual commentary in Notebooks 01–03; added method citations and cleaned invalid notebook versions; updated file paths to reflect new folder structure.
 
 ### Extensions 🔌
 
