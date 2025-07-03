@@ -136,9 +136,12 @@ github/workflows/ — GitHub CI/CD automation.
 - Visualisation of anomaly scores and clustering
 - Ethical reflection module
 - Fully reproducible codebase with documentation
-- 
+  
 **Updates:**  
 - Week 6 (16–23 June): Improved markdown structure and visual commentary in Notebooks 01–03; added method citations and cleaned invalid notebook versions; updated file paths to reflect new folder structure.
+- Week 7 (24–30 June): Added requirements.txt environment file for reproducibility.
+- Week 8 (1–7 July): Finalised README polish, dataset documentation, and ensured consistency of file structure and links.
+
 
 ### Extensions 🔌
 
@@ -152,9 +155,11 @@ github/workflows/ — GitHub CI/CD automation.
 List datasets used with:
 
 - Dataset: InternalBleeding14
+- Description: Univariate physiological-style time series used for anomaly detection benchmark tasks.
 - Source: UCR Time Series Anomaly Archive (2021)
 - Licence: Public benchmark dataset
 - Location: Included in repository
+
 
 ## Best Practice Notes 📝
 
@@ -174,7 +179,8 @@ List datasets used with:
 
 ## Additional Resources 🔗
 
-- Wu, R., & Keogh, E. (2020). Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress. arXiv:2009.13807.scikit-learn official documentation
+- Wu, R., & Keogh, E. (2020). Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress. arXiv:2009.13807.
+- scikit-learn official documentation
 - HDBSCAN official documentation
 - Imperial College London ReCoDE Exemplar Guide
 
