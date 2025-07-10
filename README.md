@@ -9,10 +9,8 @@ This exemplar provides a complete pipeline for unsupervised anomaly detection ap
 
 (Visual representative image to be inserted - PCA cluster visualisation with anomaly overlays will be included after Week 6 visual refinement.)
 
-This exemplar was developed at Imperial College London by Duke T J Ludera in
-collaboration with (RSE MENTOR) from Research Software Engineering and
-(RCDS MENTOR) from Research Computing & Data Science at the Early Career
-Researcher Institute.
+This exemplar was developed at Imperial College London by Duke T J Ludera in collaboration with Saranjeet Kaur S S Bhogal from Research Software Engineering and
+Dr. Jianliang Gao from Research Computing & Data Science at the Early Career Researcher Institute.
 
 ## Learning Outcomes 🎓
 
