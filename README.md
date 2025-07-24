@@ -136,17 +136,22 @@ github/workflows/ — GitHub CI/CD automation.
 - Fully reproducible codebase with documentation
   
 **Updates:**  
-- Week 6 (16–23 June): Improved markdown structure and visual commentary in Notebooks 01–03; added method citations and cleaned invalid notebook versions; updated file paths to reflect new folder structure.
-- Week 7 (24–30 June): Added requirements.txt environment file for reproducibility.
-- Week 8 (1–7 July): Finalised README polish, dataset documentation, and ensured consistency of file structure and links.
-
+- Week 1 (13–16 May): Set up GitHub, load dataset, create initial notebook.
+- Week 2 (19–23 May): Start anomaly detection model (e.g. Isolation Forest).
+- Week 3 (26–30 May): Create plots and graphs (e.g. PCA, HDBSCAN).
+- Week 4 (2–6 May): Write markdown explanations and model interpretation.
+- Week 5 (9–13 May): Add ethics section to notebook.
+- Week 6 (16–20 June): Improve visuals, clean comments, add sources.
+- Week 7 (23–27 June): Add environment file and test notebook.
+- Week 8 (30 Jun–4 July): Finalise README and dataset information.
+- Week 9 (7–11 July): Peer review and polish.
+- Week 10 (14–18 July): Final check and submit core materials.
+- Week 11 (21-24 July): Final GitHub reproducibility setup and devcontainer testing
 
 ### Extensions 🔌
 
-- Behavioural data augmentation (SMOTE, jittering, scaling, warping)
 - Advanced ethical scenario analysis
 - Visualisation refinement for industry or academic presentation
-- Regulatory audit integration for compliance-sensitive applications
 
 ## Data 📊
 
@@ -181,6 +186,8 @@ List datasets used with:
 - scikit-learn official documentation
 - HDBSCAN official documentation
 - Imperial College London ReCoDE Exemplar Guide
+
+Note: Some learners may initially assume we are detecting scarce data per se. That is not the case. Scarcity here refers to the context in which anomalies occur. They are uncommon, possibly unlabelled, and embedded within larger typical patterns. The exemplar explores methods that work despite this scarcity.
 
 ## Licence 📄
 
