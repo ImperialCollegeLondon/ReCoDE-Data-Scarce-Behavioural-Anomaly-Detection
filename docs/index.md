@@ -1,6 +1,6 @@
 # ReCoDE Exemplar - Data-Scarce Time Series Anomaly Detection
 
-<img src="docs/assets/readme-img.png" alt="Cluster Plot" width="100%" />
+![Cluster Plot](docs/assets/readme-img.png)
 
 
 ## Overview
