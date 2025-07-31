@@ -62,7 +62,7 @@ notebooks/
 ├── 07_reproducibility_and_environment_testing.ipynb
 └── 08_finalised_summary_notebook.ipynb
 ```
-5. Follow markdown guidance and exercises embedded within each notebook.
+5. Follow the markdown guidance and embedded exercises in Notebooks 02, 03, and 06, where the newly added Fantasia dataset is used for practical exploration of unsupervised anomaly detection methods.
 6. Review ethical reflection sections in Week 5.
 
 ## Disciplinary Background 🔬
