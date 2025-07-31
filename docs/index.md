@@ -68,7 +68,6 @@ This exemplar provides a complete pipeline for unsupervised anomaly detection ap
 
 BSD-3-Clause License
 
----
 
 ## Acknowledgements
 
