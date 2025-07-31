@@ -1,5 +1,8 @@
 # ReCoDE Exemplar - Data-Scarce Time Series Anomaly Detection
 
+<img src="docs/assets/readme-img.png" alt="Cluster Plot" width="100%" />
+
+
 ## Overview
 
 This exemplar provides a complete pipeline for unsupervised anomaly detection applied to univariate time series data. Using the InternalBleeding14 dataset from the UCR Time Series Anomaly Archive, the project demonstrates techniques for detecting irregular patterns in physiological-style sensor recordings, where normal operating conditions are occasionally interrupted by anomalous deviations. The exemplar guides learners through data preparation, preprocessing, Isolation Forest modelling, dimensionality reduction with PCA, clustering with HDBSCAN, model interpretation, and ethical considerations when analysing scarce or sensitive time series data. The exemplar is fully modular, industry-aligned, and reproducible for academic and applied machine learning use cases.
@@ -9,7 +12,7 @@ This exemplar provides a complete pipeline for unsupervised anomaly detection ap
 - **Dataset name:** InternalBleeding14  
 - **Source:** UCR Time Series Anomaly Archive  
 - **Citation:**  
-  - Wu, R., & Keogh, E. (2020). *Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress.* arXiv:2009.13807
+  ▪ Wu, R., & Keogh, E. (2020). *Current Time Series Anomaly Detection Benchmarks are Flawed and are Creating the Illusion of Progress.* arXiv:2009.13807
 
 ## Weekly Structure
 
@@ -64,3 +67,9 @@ This exemplar provides a complete pipeline for unsupervised anomaly detection ap
 ## Licensing
 
 BSD-3-Clause License
+
+---
+
+## Acknowledgements
+
+This exemplar was developed at *Imperial College London* by **Duke T. J. Ludera**, in collaboration with *Saranjeet Kaur S. S. Bhogal* from Research Software Engineering, and *Dr Jianliang Gao* from Research Computing & Data Science at the Early Career Researcher Institute.
