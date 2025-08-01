@@ -2,7 +2,7 @@ site_name: ReCoDE Exemplar
 repo_url: https://github.com/ImperialCollegeLondon/ReCoDE-Data-Scarce-Behavioural-Anomaly-Detection
 
 nav:
-#   - 'Home': 'index.md'
+    - 'Home': 'index.md'
     - 'Notebooks':
         - 'Dataset Preparation': '01_dataset_preparation.ipynb'
         - 'Preprocessing and Baseline': '02_preprocessing_and_baseline_iforest.ipynb'
