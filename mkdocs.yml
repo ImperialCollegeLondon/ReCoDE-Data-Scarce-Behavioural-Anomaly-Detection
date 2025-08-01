@@ -19,7 +19,7 @@ edit_uri: tree/main/docs/
 
 theme:
   name: material
-  custom_dir: docs
+  # custom_dir: docs
   logo: assets/iclogo.png
   favicon: assets/favicon.ico
   font:
