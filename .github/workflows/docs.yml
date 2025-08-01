@@ -20,7 +20,7 @@ jobs:
           python-version: 3.12
 
       - name: Install documentation dependencies
-        run: pip install mkdocs mkdocs-material mkdocs-jupyter mkdocs-include-markdown-plugin mkdocs-exclude pymdown-extensions
+        run: pip install "mkdocs==1.6.1" "mkdocs-material==9.6.12" "mkdocs-jupyter==0.25.1" "mkdocs-include-markdown-plugin==7.1.5" "mkdocs-exclude==1.0.2" "python-markdown-math==0.9"
     # - name: Install dependencies (with mkdocs-jupyter)
     #    run: |
          # pip install -e .[dev]
