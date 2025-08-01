@@ -35,14 +35,14 @@ jobs:
 
       #  Removed the notebook copying step – mkdocs-jupyter handles this
 
-      - name: Rewrite links in README.md for docs
-        env:
-          GH_URL: https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}
-        run: |
-          perl -i -pe '
-            s#\]\(docs/([^):]+)\)#](docs/$1)#g; 
-            s#\]\((?!https?:|mailto:|docs/)([^)]+)\)#]($ENV{GH_URL}/$1)#g
-          ' README.md
+    #  - name: Rewrite links in README.md for docs
+    #    env:
+    #      GH_URL: https://github.com/${{ github.repository }}/blob/${{ github.ref_name }}
+    #    run: |
+    #      perl -i -pe '
+    #        s#\]\(docs/([^):]+)\)#](docs/$1)#g; 
+    #        s#\]\((?!https?:|mailto:|docs/)([^)]+)\)#]($ENV{GH_URL}/$1)#g
+    #      ' README.md
 
       - name: Deploy MkDocs
         run: mkdocs gh-deploy --force
