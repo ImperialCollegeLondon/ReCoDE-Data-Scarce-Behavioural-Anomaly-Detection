@@ -19,14 +19,16 @@ jobs:
         with:
           python-version: 3.12
 
-      - name: Install dependencies (with mkdocs-jupyter)
-        run: |
-          pip install -e .[dev]
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install mkdocs-jupyter
-          pip install mkdocs-include-markdown-plugin
-          pip install mkdocs-exclude
+      - name: Install documentation dependencies
+        run: pip install mkdocs mkdocs-material mkdocs-jupyter mkdocs-include-markdown-plugin mkdocs-exclude pymdown-extensions
+    # - name: Install dependencies (with mkdocs-jupyter)
+    #    run: |
+         # pip install -e .[dev]
+         # pip install mkdocs
+         # pip install mkdocs-material
+         # pip install mkdocs-jupyter
+         # pip install mkdocs-include-markdown-plugin
+         # pip install mkdocs-exclude
 
       - name: Embed Markdown images in notebooks
         run: python utils/embed_images.py notebooks
