@@ -41,7 +41,10 @@ extra:
   homepage: https://imperialcollegelondon.github.io/ReCoDE-home/
 
 plugins:
-    - monorepo
+    - monorepo:
+        sources:
+            - docs: 'docs'
+            - notebooks: 'notebooks'
     - tags
     - search
     - include-markdown
