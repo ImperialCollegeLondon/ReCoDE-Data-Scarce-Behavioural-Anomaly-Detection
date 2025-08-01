@@ -1,14 +1,22 @@
 site_name: ReCoDE Exemplar
 repo_url: https://github.com/ImperialCollegeLondon/ReCoDE-Data-Scarce-Behavioural-Anomaly-Detection
 
-## Please change the above name and link to point to your exemplar
-## Please do not change the theme or most other options below 
+nav:
+  - 'Home': 'index.md'
+  - 'Notebooks':
+      - 'Dataset Preparation': '!include notebooks/01_dataset_preparation.ipynb'
+      - 'Preprocessing and Baseline': '!include notebooks/02_preprocessing_and_baseline_iforest.ipynb'
+      - 'Dimensionality and Clustering': '!include notebooks/03_dimensionality_and_clustering.ipynb'
+      - 'Model Interpretation': '!include notebooks/04_model_interpretation_and_explanation.ipynb'
+      - 'Ethics and Limitations': '!include notebooks/05_ethics_and_limitations.ipynb'
+      - 'Visual Polishing': '!include notebooks/06_visual_polishing_and_citations.ipynb'
+      - 'Reproducibility': '!include notebooks/07_reproducibility_and_environment_testing.ipynb'
+      - 'Finalised Summary': '!include notebooks/08_finalised_summary_notebook.ipynb'
 
 edit_uri: tree/main/docs/
 
 theme:
   name: material
-  # custom_dir: docs
   logo: assets/iclogo.png
   favicon: assets/favicon.ico
   font:
@@ -23,40 +31,25 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
-
-  # SPA behaviour
   features:
     - navigation.instant
     - navigation.top
     - toc.follow
     - content.code.annotate
+
 extra:
   homepage: https://imperialcollegelondon.github.io/ReCoDE-home/
 
-# Add here all the plugins you want to use.
-# Don't forget to add them in requirements.txt as well.
 plugins:
-  - monorepo:
-      nav:
-        - 'Home': 'index.md'
-        - 'Notebooks':
-            - 'Dataset Preparation': '!include notebooks/01_dataset_preparation.ipynb'
-            - 'Preprocessing and Baseline': '!include notebooks/02_preprocessing_and_baseline_iforest.ipynb'
-            - 'Dimensionality and Clustering': '!include notebooks/03_dimensionality_and_clustering.ipynb'
-            - 'Model Interpretation': '!include notebooks/04_model_interpretation_and_explanation.ipynb'
-            - 'Ethics and Limitations': '!include notebooks/05_ethics_and_limitations.ipynb'
-            - 'Visual Polishing': '!include notebooks/06_visual_polishing_and_citations.ipynb'
-            - 'Reproducibility': '!include notebooks/07_reproducibility_and_environment_testing.ipynb'
-            - 'Finalised Summary': '!include notebooks/08_finalised_summary_notebook.ipynb'
+  - monorepo
   - tags
   - search
-  - include-markdown # https://github.com/mondeja/mkdocs-include-markdown-plugin
+  - include-markdown
   - mkdocs-jupyter
   - exclude:
       glob:
         - "LICENSE.md"
 
-# Set settings for markdown extensions
 markdown_extensions:
   - meta
   - mdx_math:
@@ -69,6 +62,5 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-# Render math in mkdocs
 extra_javascript:
   - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
