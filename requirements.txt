@@ -4,4 +4,7 @@ matplotlib
 seaborn
 scikit-learn
 hdbscan
+mkdocs
+mkdocs-material
+mkdocs-jupyter
 mkdocs-monorepo-plugin
