@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "your_project"
+name = "ReCoDE-Data-Scarce-Behavioural-Anomaly-Detection"
 version = "0.1.0"
 
 dependencies = [
