@@ -3,8 +3,11 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+scipy
 hdbscan
+cython
 mkdocs
 mkdocs-material
 mkdocs-jupyter
 mkdocs-monorepo-plugin
+
