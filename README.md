@@ -2,7 +2,7 @@
 <!-- Your exemplar title. Make it sound catchy! -->
 # Data-Scarce Behavioural Anomaly Detection
 
-<img src="assets/readme-img.png" alt="Cluster Plot" width="100%" />
+<img src="docs/assets/readme-img.png" alt="Cluster Plot" width="100%" />
 
 ## Overview
 
